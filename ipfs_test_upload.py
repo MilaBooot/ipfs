@@ -10,7 +10,7 @@ PINATA_JWT_TOKEN=os.getenv('PINATA_JWT_TOKEN')
 FILE_PATH = 'commont.txt'
 
 def upload_to_pinata(filepath, jwt_token):
-    url="https://api.pinata.cloud/data/pinList" #TODO this url should be updated witht the latest node
+    url="https://azure-rare-parakeet-361.mypinata.cloud" #this url should be updated witht the latest node in Gatway tab
     headers = {'Authorization': f'Bearer{jwt_token}'}
 
     with open(filepath, 'rb') as file:

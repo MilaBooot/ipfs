@@ -8,7 +8,7 @@ load_dotenv()
 
 
 def get_from_pinata(jwt_token):
-    url = "https://api.pinata.cloud/data/pinList" #TODO this url should be updated witht the latest node
+    url = "https://azure-rare-parakeet-361.mypinata.cloud" #this url should be updated witht the latest node in Gatway tab
     headers = {'Authorization': f'Bearer {jwt_token}'}
 
     response = requests.get(url, headers=headers)
