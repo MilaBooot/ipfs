@@ -10,7 +10,7 @@ PINATA_JWT_TOKEN=os.getenv('PINATA_JWT_TOKEN')
 FILE_PATH = 'commont.txt'
 
 def upload_to_pinata(filepath, jwt_token):
-    url="https://api.pinata.cloud/data/pinList"
+    url="https://api.pinata.cloud/data/pinList" #TODO this url should be updated witht the latest node
     headers = {'Authorization': f'Bearer{jwt_token}'}
 
     with open(filepath, 'rb') as file:
